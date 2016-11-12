@@ -99,7 +99,7 @@ Keyboard::Keyboard(QWidget *parent)
         QPushButton *button = new QPushButton;
         button->setFixedWidth(70);
         button->setText(QString::fromLatin1(keyboardLayout[i].label));
-        button->setStyleSheet("background-color: black; color:white;border-width: 4px;");
+        button->setStyleSheet("background-color: white; color:black;border-width: 4px;");
         mapper->setMapping(button, keyboardLayout[i].key);
         connect(button, SIGNAL(clicked()), mapper, SLOT(map()));
 
